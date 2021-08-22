@@ -1,25 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+// 1 Отримати всі пости з jsonplaceholder та вивести їх. До кожного поста зробити кнопку ,при натисканні
+// якої виводиться більш детальна інформація про пост в середині Posts компоненти.
 
-function App() {
+// 2 Отримати всі коментарі з jsonplaceholder та вивести їх. До кожного комента зробити кнопку, при натисканні
+// якої виводиться більш детальна інформація про коментар в середині Comments компоненти.
+
+import './App.css';
+import Posts from "./components/posts/Posts";
+import Comments from "./components/comments/Comments";
+
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+    <Posts/>
+      <Comments/>
     </div>
   );
 }
 
-export default App;
+
